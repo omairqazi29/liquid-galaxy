@@ -30,10 +30,10 @@ OCTET="42"
 SCREEN_ORIENTATION="V"
 GIT_FOLDER_NAME="liquid-galaxy"
 GIT_URL="https://github.com/LiquidGalaxyLAB/liquid-galaxy"
-EARTH_DEB="http://dl.google.com/dl/earth/client/current/google-earth-stable_current_i386.deb"
-EARTH_DEB7="https://raw.githubusercontent.com/LiquidGalaxyLAB/liquid-galaxy/master/google-earth-pro7_1.deb"
+EARTH_DEB="https://dl.google.com/dl/earth/client/GE7/release_7_3_0/google-earth-pro-stable_7.3.0.3832-r0_i386.deb"
+EARTH_DEB7="https://dl.google.com/dl/earth/client/GE7/release_7_3_0/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb"
 if [ `getconf LONG_BIT` = "64" ]; then
-EARTH_DEB="http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb"
+EARTH_DEB="https://dl.google.com/dl/earth/client/GE7/release_7_3_0/google-earth-pro-stable_7.3.0.3832-r0_amd64.deb"
 fi
 EARTH_FOLDER="/opt/google/earth/pro/"
 NETWORK_INTERFACE=$(/sbin/route -n | grep "^0.0.0.0" | rev | cut -d' ' -f1 | rev)
